@@ -37,7 +37,7 @@ async function main() {
     console.log(`firstUser2: ${firstUser2}`);
 
     
-    console.log('\n--------Promise all--------');
+    console.log('\n--------Promise all--------\n');
     const arr = [{
         key: 1
     }, {
@@ -51,7 +51,7 @@ async function main() {
     });
     // document.writeln( `Before waiting: ${results}`);
 
-    Promise.all(results).then((completed) => console.log(`\nResult: ${completed}`));
+    Promise.all(results).then((completed) => console.log(`Result: ${completed}`));
     console.log(`\nResult without Promise all: ${results}`)
 }
 
