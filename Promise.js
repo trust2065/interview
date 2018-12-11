@@ -49,7 +49,6 @@ async function main() {
     const results = arr.map(async (obj) => {
         return obj.key;
     });
-    // document.writeln( `Before waiting: ${results}`);
 
     Promise.all(results).then((completed) => console.log(`Result: ${completed}`));
     console.log(`\nResult without Promise all: ${results}`)
